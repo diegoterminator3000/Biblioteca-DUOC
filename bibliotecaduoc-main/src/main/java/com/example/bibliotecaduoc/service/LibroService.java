@@ -13,9 +13,22 @@ public class LibroService {
     @Autowired
     private LibroRepository libroRepository;
 
+
+
+
+    
     public List<Libro> getLibros(){
         return libroRepository.obtenerListaLibros();
     }
+
+    public int totalLibrosV2(){
+        return libroRepository.totalLibros();
+    }
+
+
+
+
+
 
     public Libro saveLibro(Libro libro){
         return libroRepository.guardar(libro);
